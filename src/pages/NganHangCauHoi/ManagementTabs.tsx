@@ -2,23 +2,24 @@ import { Tabs } from 'antd';
 import KnowledgeCategory from '../NganHangCauHoi/KnowledgeCategory/CategoryManagement';
 import QuestionManagement from '../NganHangCauHoi/Question/QuestionManagement';
 import SubjectManagement from '../NganHangCauHoi/Subject/SubjectManagement';
+import ExamManagement from './Exam/ExamManagement';
 
 const { TabPane } = Tabs;
 
 const ManagementTabs = () => {
 	return (
-		<Tabs defaultActiveKey="1">
-			<TabPane tab="Danh mục kiến thức" key="1">
+		<Tabs defaultActiveKey='1'>
+			<TabPane tab='Danh mục kiến thức' key='1'>
 				<KnowledgeCategory />
 			</TabPane>
-			<TabPane tab="Quản lý môn học" key="2">
+			<TabPane tab='Quản lý môn học' key='2'>
 				<SubjectManagement />
 			</TabPane>
-            <TabPane tab="Quản lý câu hỏi" key="3">
+			<TabPane tab='Quản lý câu hỏi' key='3'>
 				<QuestionManagement />
 			</TabPane>
-            <TabPane tab="Ngân hàng đề thi" key="4">
-				<QuestionManagement />
+			<TabPane tab='Ngân hàng đề thi' key='4'>
+				<ExamManagement />
 			</TabPane>
 		</Tabs>
 	);
